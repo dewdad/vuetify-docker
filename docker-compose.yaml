@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  engine:
+      image: attempt-number4:latest
+      build: .
+      container_name: attempt-number4
+      command: npm run dev
+      volumes:
+        - .:/vue-attempt4
+      expose:
+        - "8000"
+      ports:
+        - "8080:8080"
+      environment:
+        - IN_DOCKER=1
