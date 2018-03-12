@@ -1,8 +1,10 @@
 FROM node:8.9.4
 
-WORKDIR /vue-attempt4
+RUN mkdir /vue-attempt4
 
 COPY package.json /vue-attempt4
+
+WORKDIR /vue-attempt4
 
 RUN npm install
 
