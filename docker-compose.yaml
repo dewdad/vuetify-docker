@@ -9,8 +9,8 @@ services:
       volumes:
         - .:/vue-attempt4
       expose:
-        - "8000"
+        - "4200"
       ports:
-        - "8080:8080"
+        - "4200:4200"
       environment:
         - IN_DOCKER=1
