@@ -1,13 +1,13 @@
 FROM node:8.9.4
 
-RUN mkdir /vue-attempt4
+RUN mkdir /vuetify-docker
 
-COPY package.json /vue-attempt4
+COPY package.json /vuetify-docker
 
-WORKDIR /vue-attempt4
+WORKDIR /vuetify-docker
 
 RUN npm install
 
-COPY . /vue-attempt4
+COPY . /vuetify-docker
 
 ENV HOST 0.0.0.0

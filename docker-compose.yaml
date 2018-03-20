@@ -2,12 +2,12 @@ version: '3'
 
 services:
   engine:
-      image: attempt-number4:latest
+      image: vuetify-docker:latest
       build: .
-      container_name: attempt-number4
+      container_name: vuetify-docker
       command: npm run dev
       volumes:
-        - .:/vue-attempt4
+        - .:/vuetify-docker
       expose:
         - "4200"
       ports:
